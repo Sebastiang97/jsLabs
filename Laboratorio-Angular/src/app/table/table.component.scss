@@ -1,0 +1,61 @@
+.table-container {
+  border: 2px solid #a4a5a7;
+  border-radius: 10px;
+  overflow: hidden;
+
+  input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 15px;
+    width: 90%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 670px;
+
+    td,
+    th {
+      text-align: center;
+      border: 1px solid #a4a5a7;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #a4a5a7;
+    }
+
+    td {
+      &.bg-success {
+        background-color: #198754;
+      }
+
+      &.bg-danger {
+        background-color: #dc3545;
+      }
+    }
+  }
+
+  td div {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  td .member {
+    background-image: url("https://www.svgrepo.com/show/508287/check.svg");
+  }
+
+  td .not-member {
+    background-image: url("https://www.svgrepo.com/show/508291/cross.svg");
+  }
+}

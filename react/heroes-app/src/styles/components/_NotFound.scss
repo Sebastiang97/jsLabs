@@ -1,0 +1,37 @@
+.NotFound-Content {
+  width: 100%;
+  margin: 5rem auto;
+
+  .contents {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    .title {
+      font-size: 3.5rem;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+      color: $light;
+    }
+    p {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      font-weight: 200;
+      color: $light;
+    }
+    a {
+      padding: 0.5rem;
+      color: $light;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+      background-color: $grey;
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
+}

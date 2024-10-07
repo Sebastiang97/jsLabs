@@ -1,0 +1,42 @@
+[
+    {
+        "Name": "Coriss Beceril",
+        "Email": "cbeceril0@tripod.com",
+        "Cellphone": "117 244 4707",
+        "Member": false,
+        "Gender": "Masculino",
+        "age": 18
+    },
+    {
+        "Name": "Way Fenna",
+        "Email": "wfenna1@mashable.com",
+        "Cellphone": "467 423 9663",
+        "Member": false,
+        "Gender": "Femenino",
+        "age": 23
+    },
+    {
+        "Name": "Drake Savidge",
+        "Email": "dsavidge2@technorati.com",
+        "Cellphone": "997 987 8309",
+        "Member": false,
+        "Gender": "Masculino",
+        "age": 12
+    },
+    {
+        "Name": "Leta Mattersey",
+        "Email": "lmattersey3@nyu.edu",
+        "Cellphone": "998 889 2604",
+        "Member": true,
+        "Gender": "No Binario",
+        "age": 8
+    },
+    {
+        "Name": "Fransisco Shuter",
+        "Email": "fshuter4@163.com",
+        "Cellphone": "305 266 9229",
+        "Member": true,
+        "Gender": "No Binario",
+        "age": 9
+    }
+]

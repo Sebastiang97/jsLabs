@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url('fonts/Roboto-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    background-color: aliceblue;
+}
+
+
+p {
+    color: sienna;
+    font-family: 'Roboto-thin', Helvetica, sans-serif;
+}
+
+#listOne {
+    border: 1px solid #663399;
+}
+
+.listaDesordenanda {
+    color: green;
+}
+
+.firstP {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+p:nth-child(2) {
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+img {
+    margin: 10px 20px 30px 40px;
+    padding: 10px 20px 30px 40px;
+    width: 250px;
+    border: 5px solid #663399;
+}
+
+.rounded {
+    border-radius: 12px;
+}
+
+a[href="#"] {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}

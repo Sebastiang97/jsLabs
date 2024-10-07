@@ -1,0 +1,46 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    /* Por ejemplo, tres columnas de 100px cada una */
+    gap: 20px;
+    /* Espacio entre las celdas del grid */
+    position: relative;
+}
+
+.grid-item {
+    background-color: lightgray;
+    /* Color de fondo para los elementos */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Pseudo-elemento para las columnas */
+.grid-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    /* Ancho de las columnas */
+    background-color: lightblue;
+    /* Color entre columnas */
+    z-index: -1;
+}
+
+/* Pseudo-elemento para los espacios entre columnas */
+.grid-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 10px);
+    /* La mitad del ancho de los gaps */
+    width: 20px;
+    /* Ancho de los gaps */
+    background-color: lightblue;
+    /* Color de fondo de los gaps */
+    z-index: -1;
+}

@@ -1,0 +1,36 @@
+<div class="table-container">
+    <div class="input-group">
+        <input type="text" [(ngModel)]="searchText" class="form-control" placeholder="Buscar">
+    </div>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Celular</th>
+            <th>Es Miembro</th>
+            <th>Genero</th>
+            <th>edad</th>
+        </tr>
+        <tr *ngFor="let user of users | searchFilter: searchText">
+            <td>{{user.Name}}</td>
+            <td>{{user.Email}}</td>
+            <td>{{user.Cellphone}}</td>
+            <td>
+                <div class="member" *ngIf="user.Member === true"></div>
+                <div class="not-member" *ngIf="user.Member === false"></div>
+            </td>
+            <!-- <td>
+                <div class="member" *ngIf="user.Member"></div>
+                <div class="not-member" *ngIf="!user.Member"></div>
+            </td> -->
+            <!-- <td>
+                <div class="member" *ngIf="user.Member;else notMember"></div>
+                <ng-template #notMember>
+                    <div class="not-member" *ngIf="user.Member === false"></div>
+                </ng-template>
+            </td> -->
+            <td>{{user.Gender}}</td>
+            <td [ngClass]="{'bg-success': user.age>= 18, 'bg-danger': user.age < 18}">{{user.age}}</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,20 @@
+$colorbg: salmon;
+$widthH1: 200px;
+$width2: $widthH1 + 100px;
+
+.container{
+    background-color: $colorbg;
+    h1{
+        color: $colorbg;
+        background-color: $colorbg;
+        padding: 15px;
+        width: $width2;
+    }
+    p{
+        width: $width2;
+        background-color: $colorbg;
+    }
+    ul{
+        border: 2px solid $colorbg;
+    }
+}

@@ -1,0 +1,16 @@
+.container {
+  background-color: salmon;
+}
+.container h1 {
+  color: salmon;
+  background-color: salmon;
+  padding: 15px;
+  width: 300px;
+}
+.container p {
+  width: 300px;
+  background-color: salmon;
+}
+.container ul {
+  border: 2px solid salmon;
+}/*# sourceMappingURL=style.css.map */

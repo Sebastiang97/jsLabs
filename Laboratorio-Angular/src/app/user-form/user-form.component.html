@@ -1,0 +1,26 @@
+<form ngNativeValidate class="form-container" (submit)="submitForm()" [formGroup]="form">
+    <label for="username">Nombre de usuario</label>
+    <input name="username" formControlName="username" id="username" type="text" required>
+    <label for="email">Correo electrónico</label>
+    <input name="email" formControlName="email" id="email" type="email" required>
+    <label for="phone">Celular</label>
+    <input name="phone" formControlName="phone" id="phone" type="number" required>
+    <label for="age">Edad</label>
+    <input name="age" formControlName="age" id="age" type="number" required>
+    <div class="check-container">
+        <label for="member">¿Pertenece a la célula Micro Fontends?</label>
+        <br>
+        <input type="checkbox" formControlName="member" id="member" name="member">
+    </div>
+    <div class="gender-group">
+        <p>Genero:</p>
+        <input type="radio" formControlName="gender" id="male" name="gender" value="Masculino" required>
+        <label for="html">Masculino</label><br>
+        <input type="radio" formControlName="gender" id="female" name="gender" value="Femenino">
+        <label for="css">Femenino</label><br>
+        <input type="radio" formControlName="gender" id="nobinary" name="gender" value="No binario">
+        <label for="javascript">No binario</label>
+    </div>
+    <button type="submit">Enviar</button>
+    <button type="button" class="test" (click)="checkData()">Check Data</button>
+</form>

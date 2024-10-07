@@ -1,0 +1,16 @@
+h2{
+    text-align: center;
+}
+.container{
+    margin: 0 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
+}
+
+.chart{
+    display: block;
+}
+
+
+

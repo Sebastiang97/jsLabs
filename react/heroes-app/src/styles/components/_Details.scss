@@ -1,0 +1,38 @@
+.Details-Content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  .Section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 1rem;
+    img {
+      width: 94%;
+    }
+    .contents {
+      width: 100%;
+      margin: 1rem 0;
+
+      color: $light;
+      .description {
+        text-align: justify;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 200;
+        color: $light;
+      }
+      a {
+        padding: 0.5rem;
+        color: $light;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        background-color: $grey;
+        &:hover {
+          color: $hover;
+        }
+      }
+    }
+  }
+}
